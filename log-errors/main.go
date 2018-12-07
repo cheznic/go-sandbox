@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/cheznic/go-sandbox/error-log/log"
+	"github.com/cheznic/go-sandbox/log-errors/log"
 )
 
 func main() {

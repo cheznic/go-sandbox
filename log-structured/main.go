@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/cheznic/go-sandbox/error-structured-logs/structured"
+	"github.com/cheznic/go-sandbox/log-structured/structured"
 )
 
 func main() {
