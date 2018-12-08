@@ -5,6 +5,9 @@
 *.so
 *.dylib
 
+# Visual Studio Code spelling library
+.vscode
+
 # Test binary, build with `go test -c`
 *.test
 
