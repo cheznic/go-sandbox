@@ -9,7 +9,10 @@ import (
 // Setup configures the db along with pools
 // number of connections and more
 func Setup() (*sql.DB, error) {
-	db, err := sql.Open("mysql", fmt.Sprintf("%s:%s@/gocookbook?parseTime=true", os.Getenv("MYSQLUSERNAME"), os.Getenv("MYSQLPASSWORD")))
+	user := os.Getenv("MYSQLUSERNAME")
+	pass := os.Getenv("MYSQLPASSWORD")
+	dataSource := fmt.Sprintf("%s:%s@/gocookbook?parseTime=true", user, pass)
+	db, err := sql.Open("mysql", dataSource)
 	if err != nil {
 		return nil, err
 	}
